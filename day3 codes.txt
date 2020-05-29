@@ -1,0 +1,138 @@
+/* return last digit of given no*/
+
+import java.util.*;
+public class returnlastdigi
+{
+	public static void main(String args[]) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int n;
+		n = sc.nextInt();
+		System.out.println(lastdigi(n));		
+	}
+	private static int lastdigi(int n) 
+	{
+		int a;
+		if(n>0)//n is +ve
+			a = n%10;  
+		else
+			a=(-n)%10;
+		return a;			
+	}
+
+}
+
+===========================================================================================================
+/* return 2nd last digit of given no*/
+
+import java.util.*;
+public class returnseclastdigi
+{
+	public static void main(String args[]) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int n;
+		n = sc.nextInt();
+		System.out.println(lastdigi(n));	
+	}
+	private static int lastdigi(int n) 
+	{
+		int a;
+		n=n/10;//eliminates last digit 
+		if(n == 0)
+			return -1;
+		else
+		{
+			if(n>0)//n is +ve
+				a = n%10;  
+			else
+				a=(-n)%10;
+		return a;	
+		}
+	}
+
+}
+==============================================================================================================
+/* return sum of last digit of given 2 no*/
+
+
+import java.util.*;
+public class returnsumlastdigi
+{
+	public static void main(String args[]) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int a,b;
+		a = sc.nextInt();//scan 2 numbers
+		b = sc.nextInt();
+		System.out.println(lastdigi(a,b));		
+	}
+	private static int lastdigi(int a,int b) 
+	{
+		int lastdigi1,lastdigi2;
+		if(a>0)
+			lastdigi1 = a%10;
+		else
+			lastdigi1 = (-a)%10;
+		if(b>0)
+			lastdigi2 = b%10;
+		else
+			lastdigi2 = (-b)%10;
+		return (lastdigi1+lastdigi2);
+	}
+
+}
+==========================================================================================================
+/* write a func to find whether given input no is even */
+
+import java.util.*;
+public class Even //creating class named even
+{
+	public static void main(String args[]) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int n;
+		n = sc.nextInt();
+		System.out.println(Even(n));	
+	}
+	private static int Even(int n) 
+	{
+		if(n%2==0) 
+		{
+			return 2;  
+		}
+		else
+			return 1; 
+		
+	}
+
+}
+===================================================================================================
+
+/* write a func to find whether given input no is odd */
+
+import java.util.*;
+public class Odd 
+{
+	public static void main(String args[]) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int n;
+		n = sc.nextInt();
+		System.out.println(Odd(n));		
+	}
+	private static int Odd(int n) 
+	{
+		if(n%2==0)
+		{
+			return 1;  
+		}
+		else
+			return 2; 
+		
+	}
+
+
+}
+
+=====================================================================================================
